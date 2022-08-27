@@ -1,0 +1,387 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CBaseObject::FindSnapToBuildPos"
+			{
+				"linux"		"@_ZN11CBaseObject18FindSnapToBuildPosEPS_"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x38\x57\x8B\xF9\xE8\x2A\x2A\x2A\x2A\x84\xC0"
+			}
+			"CLagCompensationManager::StartLagCompensation"
+			{
+				"library"	"server"
+				"linux"		"@_ZN23CLagCompensationManager20StartLagCompensationEP11CBasePlayerP8CUserCmd"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x24\x57\x8B\xF9\x89\x7D\xE8"
+			}
+			"CLagCompensationManager::FinishLagCompensation"
+			{
+				"library"	"server"
+				"linux"		"@_ZN23CLagCompensationManager21FinishLagCompensationEP11CBasePlayer"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x38\xA1\x2A\x2A\x2A\x2A\x53"
+			}
+			"CObjectSapper::ApplyRoboSapperEffects"
+			{
+				"linux"		"@_ZN13CObjectSapper22ApplyRoboSapperEffectsEP9CTFPlayerf"
+				"windows"	"\x55\x8B\xEC\x53\x57\x8B\x7D\x08\x8B\xD9\x85\xFF\x75\x2A\x5F\x32\xC0\x5B\x5D\xC2\x08\x00"
+			}
+			"CTFGameStats::ResetRoundStats"
+			{
+				"library"	"server"
+				"linux"		"@_ZN12CTFGameStats15ResetRoundStatsEv"
+				"windows"	"\x53\x8B\xD9\x56\x57\xBE\x22\x00\x00\x00"
+			}
+			"CTFGameStats::IncrementStat"
+			{
+				"library"	"server"
+				"linux"		"@_ZN12CTFGameStats13IncrementStatEP9CTFPlayer12TFStatType_ti"
+				"windows"	"\x55\x8B\xEC\x56\x8B\xF1\x8B\x0D\x2A\x2A\x2A\x2A\x85\xC9\x74\x2A\xE8\x2A\x2A\x2A\x2A"
+			}
+			"CTFPlayer::CanBuild"
+			{
+				"linux"		"@_ZN9CTFPlayer8CanBuildEii"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x0C\x53\x8B\x5D\x08\x57\x8B\xF9\x83\xFB\x03"
+			}
+			"CTFPlayer::CanPickupDroppedWeapon"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer22CanPickupDroppedWeaponEPK16CTFDroppedWeapon"
+				"windows"	"\x55\x8B\xEC\x53\x8B\x5D\x08\x56\x8B\xF1\x80\xBB\xDC\x04\x00\x00\x00"
+			}
+			"CTFPlayer::CheckBlockBackstab"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer18CheckBlockBackstabEPS_"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x14\x53\x56\x57\x8B\xF9\x8D\x9F\xB0\x19\x00\x00"
+			}
+			"CTFPlayer::DropAmmoPack"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer12DropAmmoPackERK15CTakeDamageInfobb"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x28\x53\x8B\xD9\x56\x33\xF6"
+			}
+			"CTFPlayer::RegenThink"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer10RegenThinkEv"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x74\x57\x8B\xF9\x8B\x07"
+			}
+			"CTFPlayer::TeamFortress_SetSpeed"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer21TeamFortress_SetSpeedEv"
+				"windows"	"\x55\x8B\xEC\xA1\x2A\x2A\x2A\x2A\x83\xEC\x1C\x53"
+			}
+			"CTFWeaponBuilder::StartBuilding"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CTFWeaponBuilder13StartBuildingEv"
+				"windows"	"\x55\x8B\xEC\x51\x8B\xD1\x53\x89\x55\xFC"
+			}
+		}
+		"Offsets"
+		{
+			"CBaseEntity::ChangeTeam"
+			{
+				"linux"		"95"
+				"windows"	"94"
+			}
+			"CBasePlayer::ForceRespawn"
+			{
+				"linux"		"334"
+				"windows"	"333"
+			}
+			"CEconItemView::IterateAttributes"
+			{
+				"linux"		"19"
+				"windows"	"18"
+			}
+			"CTeamplayRoundBasedRules::RoundRespawn"
+			{
+				"linux"		"227"
+				"windows"	"225"
+			}
+			"CTeamplayRules::SetWinningTeam"
+			{
+				"linux"		"161"
+				"windows"	"160"
+			}
+			"CTeam::AddPlayer"
+			{
+				"linux"		"206"
+				"windows"	"205"
+			}
+			"CTeam::RemovePlayer"
+			{
+				"linux"		"207"
+				"windows"	"206"
+			}
+			"CTFGameRules::GetCaptureValueForPlayer"
+			{
+				"linux"		"154"
+				"windows"	"153"
+			}
+			"CTFWeaponBase::ApplyPostHitEffects"
+			{
+				"linux"		"420"
+				"windows"	"413"
+			}
+			"CTFWeaponBase::ApplyOnInjuredAttributes"
+			{
+				"linux"		"421"
+				"windows"	"414"
+			}
+			"m_bitsDamageType"
+			{
+				"linux"		"60"
+				"windows"	"60"
+			}
+			"GetCurrentCommand"
+			{
+				"linux"		"3512"
+				"windows"	"3512"
+			}
+		}
+		"Functions"
+		{
+			"CBaseEntity::ChangeTeam"
+			{
+				"offset"	"CBaseEntity::ChangeTeam"
+				"hooktype"	"entity"
+				"return"	"void"
+				"this"		"entity"
+				"arguments"
+				{
+					"team"
+					{
+						"type"	"int"
+					}
+				}
+			}
+			"CBaseObject::FindSnapToBuildPos"
+			{
+				"signature"	"CBaseObject::FindSnapToBuildPos"
+				"callconv"	"thiscall"
+				"return"	"bool"
+				"this"		"entity"
+				"arguments"
+				{
+					"pObjectOverride"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			"CBasePlayer::ForceRespawn"
+			{
+				"offset"	"CBasePlayer::ForceRespawn"
+				"hooktype"	"entity"
+				"return"	"void"
+				"this"		"entity"
+			}
+			"CEconItemView::IterateAttributes"
+			{
+				"offset"	"CEconItemView::IterateAttributes"
+				"hooktype"	"raw"
+				"return"	"void"
+				"this"		"address"
+				"arguments"
+				{
+					"IEconItemAttributeIterator"
+					{
+						"type"	"objectptr"
+					}
+				}
+			}
+			"CObjectSapper::ApplyRoboSapperEffects"
+			{
+				"signature"	"CObjectSapper::ApplyRoboSapperEffects"
+				"callconv"	"thiscall"
+				"return"	"bool"
+				"this"		"entity"
+				"arguments"
+				{
+					"pTarget"
+					{
+						"type"	"cbaseentity"
+					}
+					"flDuration"
+					{
+						"type"	"float"
+					}
+				}
+			}
+			"CTeamplayRoundBasedRules::RoundRespawn"
+			{
+				"offset"	"CTeamplayRoundBasedRules::RoundRespawn"
+				"hooktype"	"gamerules"
+				"return"	"void"
+				"this"		"ignore"
+			}
+			"CTeamplayRules::SetWinningTeam"
+			{
+				"offset"	"CTeamplayRules::SetWinningTeam"
+				"hooktype"	"gamerules"
+				"return"	"void"
+				"this"		"ignore"
+				"arguments"
+				{
+					"team"
+					{
+						"type"	"int"
+					}
+					"iWinReason"
+					{
+						"type"	"int"
+					}
+					"bForceMapReset"
+					{
+						"type"	"bool"
+					}
+					"bSwitchTeams"
+					{
+						"type"	"bool"
+					}
+					"bDontAddScore"
+					{
+						"type"	"bool"
+					}
+					"bFinal"
+					{
+						"type"	"bool"
+					}
+				}
+			}
+			"CTFGameRules::GetCaptureValueForPlayer"
+			{
+				"offset"	"CTFGameRules::GetCaptureValueForPlayer"
+				"hooktype"	"gamerules"
+				"return"	"int"
+				"this"		"ignore"
+				"arguments"
+				{
+					"player"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			"CTFGameStats::ResetRoundStats"
+			{
+				"signature"	"CTFGameStats::ResetRoundStats"
+				"callconv"	"thiscall"
+				"return"	"void"
+				"this"		"address"
+			}
+			"CTFPlayer::CanBuild"
+			{
+				"signature"	"CTFPlayer::CanBuild"
+				"callconv"	"thiscall"
+				"return"	"int"
+				"this"		"entity"
+				"arguments"
+				{
+					"iObjectType"
+					{
+						"type"	"int"
+					}
+					"iObjectMode"
+					{
+						"type"	"int"
+					}
+				}
+			}
+			"CTFPlayer::CanPickupDroppedWeapon"
+			{
+				"signature"	"CTFPlayer::CanPickupDroppedWeapon"
+				"callconv"	"thiscall"
+				"return"	"bool"
+				"this"		"entity"
+				"arguments"
+				{
+					"pWeapon"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			"CTFPlayer::DropAmmoPack"
+			{
+				"signature"	"CTFPlayer::DropAmmoPack"
+				"callconv"	"thiscall"
+				"return"	"void"
+				"this"		"entity"
+				"arguments"
+				{
+					"info"
+					{
+						"type"	"objectptr"
+					}
+					"bEmpty"
+					{
+						"type"	"bool"
+					}
+					"bDisguisedWeapon"
+					{
+						"type"	"bool"
+					}
+				}
+			}
+			"CTFPlayer::RegenThink"
+			{
+				"signature"	"CTFPlayer::RegenThink"
+				"callconv"	"thiscall"
+				"return"	"void"
+				"this"		"entity"
+			}
+			"CTFWeaponBase::ApplyPostHitEffects"
+			{
+				"offset"	"CTFWeaponBase::ApplyPostHitEffects"
+				"hooktype"	"entity"
+				"return"	"void"
+				"this"		"entity"
+				"arguments"
+				{
+					"info"
+					{
+						"type"	"objectptr"
+					}
+					"pVictim"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			"CTFWeaponBase::ApplyOnInjuredAttributes"
+			{
+				"offset"	"CTFWeaponBase::ApplyOnInjuredAttributes"
+				"hooktype"	"entity"
+				"return"	"void"
+				"this"		"entity"
+				"arguments"
+				{
+					"pVictim"
+					{
+						"type"	"cbaseentity"
+					}
+					"pAttacker"
+					{
+						"type"	"cbaseentity"
+					}
+					"info"
+					{
+						"type"	"int"
+					}
+				}
+			}
+			"CTFWeaponBuilder::StartBuilding"
+			{
+				"signature"	"CTFWeaponBuilder::StartBuilding"
+				"callconv"	"thiscall"
+				"return"	"void"
+				"this"		"entity"
+			}
+		}
+	}
+}
