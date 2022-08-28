@@ -33,7 +33,7 @@ DAEMON="/bin/nice -n -19 ionice -t $DIR/srcds_run"
 SVNUM=1
 IP=10.0.0.253
 PORT=27015
-NAME=OF_Server$SVNUM
+NAME=TF2_Server$SVNUM
 PARAMS="-console -ip $IP -port $PORT +sv_clockcorrection_msecs 25 -timeout 10 -tickrate 108 +sv_lan 0 +sv_pure -1 -tvdisable -nohltv +map vsh_minegay_b3_fixb +mapcyclefile mapcycle_ff2.txt -maxplayers 32 +servercfgfile server$SVNUM.cfg"
 DESC="OF Dedicated Server #$SVNUM on port $PORT"
 
