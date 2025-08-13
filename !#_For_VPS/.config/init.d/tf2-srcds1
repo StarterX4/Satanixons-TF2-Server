@@ -1,11 +1,14 @@
 #!/bin/sh
 
+# replace "steam" with the user you created, leave it alone if you've actually called your user "steam"
+SRCDS_USER="steam"
+
 # Do not change this path
 PATH=/bin:/usr/bin:/sbin:/usr/sbin
 
 # The path to the game, only change this if you have a different installation path than in the guide.
-DIR=/home/steam/tf2
-DAEMON="/bin/nice -n -19 ionice -t $DIR/srcds_run"
+DIR=/home/$SRCDS_USER/tf2
+DAEMON="$DIR/srcds_run"
 
 # Change all Parameters to your needs.
 
@@ -31,11 +34,11 @@ DAEMON="/bin/nice -n -19 ionice -t $DIR/srcds_run"
 
 # The current settings will start the Server on 100 Tick on Dead Center 1.
 SVNUM=1
-IP=10.0.0.253
-PORT=27015
+IP=54.36.179.182
+PORT=27016
 NAME=TF2_Server$SVNUM
-PARAMS="-console -ip $IP -port $PORT +sv_clockcorrection_msecs 25 -timeout 10 -tickrate 108 +sv_lan 0 +sv_pure -1 -tvdisable -nohltv +map vsh_minegay_b3_fixb +mapcyclefile mapcycle_ff2.txt -maxplayers 32 +servercfgfile server$SVNUM.cfg"
-DESC="OF Dedicated Server #$SVNUM on port $PORT"
+PARAMS="-console -ip $IP -port $PORT +sv_clockcorrection_msecs 25 -timeout 1 -tickrate 108 +sv_lan 0 +sv_pure -1 -tvdisable -nohltv +map cp_dustbowl +mapcyclefile mapcycle_ff2.txt -maxplayers 32 +servercfgfile server$SVNUM.cfg"
+DESC="TF2 Dedicated Server #$SVNUM on port $PORT"
 
 
 ###########################################
@@ -56,9 +59,9 @@ case "$1" in
 		;;
 
 	stop)
-		if screen -ls |grep $NAME; then
+		if screen -ls |grep -w "$NAME"; then
 			echo -n "Stopping $DESC: $NAME"
-			kill `screen -ls |grep $NAME |awk -F . '{print $1}'|awk '{print $1}'`
+			kill `screen -ls |grep -w "$NAME" |awk -F . '{print $1}'|awk '{print $1}'`
 			echo " ... done."
 		else
 			echo "Couldn't find a running $DESC"
@@ -66,9 +69,9 @@ case "$1" in
 		;;
 
 	restart)
-		if screen -ls |grep $NAME; then
+		if screen -ls |grep -w "$NAME"; then
 			echo -n "Stopping $DESC: $NAME"
-			kill `screen -ls |grep $NAME |awk -F . '{print $1}'|awk '{print $1}'`
+			kill `screen -ls |grep -w "$NAME" |awk -F . '{print $1}'|awk '{print $1}'`
 			echo " ... done."
 		else
 			echo "Couldn't find a running $DESC"
